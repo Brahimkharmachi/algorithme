@@ -1,0 +1,24 @@
+ALGORITHM exercie 1
+VAR
+ sm, su, l : INTEGER
+ ch : STRING
+BEGIN
+    write ('give a sentence')
+    read (ch)
+    su:= 0
+    sm:= 01
+    l:= 0
+    FOR i := 1  TO lenght(ch) DO 
+    IF (ch [i] <> " " ) Then
+    l:= +1
+    else IF (upcase(ch [i]in ['A','E','I','U','O','Y'])) THEN
+        su:= su+1
+    else IF (ch [i]=' ') THEN
+        sm:= sm+1
+    END_IF
+    END_IF
+    write ('the number of words is :',sm)
+    write (' the vowel number is:',su)
+    write ('the lengthis:',L)
+    END_FOR
+END
